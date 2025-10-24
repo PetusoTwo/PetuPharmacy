@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Cerrar puertos y levantar servidor frontend",
+            "command": "npx kill-port 5173 && cd frontend && npm run dev",
+            "type": "shell",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ,
+        {
+            "label": "Cerrar puertos y levantar servidor backend",
+            "command": "npx kill-port 3000 && cd backend && npm run dev",
+            "type": "shell",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
